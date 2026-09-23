@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ciao Band - Midterm Concert</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", "Helvetica", sans-serif; 
+        background-color: #0b132b; /* 極深藍色背景 */
+        color: #333;
+    }
+    
+    /* 標題區塊 */
+    .Rad {
+        text-align: center; 
+        padding: 40px 20px;
+        color: white;
+        background-color: #1c2541; /* 海軍藍 */
+    }
+    .Rad h1 {
+        font-size: 2.5em;
+        margin: 0 0 10px 0;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    .Rad .accent-blue { 
+        color: #5bc0be; /* 青藍色強調色 */
+        font-size: 15px; 
+        margin: 0 0 10px 0;
+        font-weight: bold;
+    }
+
+    /* 圖片區塊 */
+    .image-container {
+        text-align: center;
+        padding: 40px 20px;
+        background-color: #0a1128; 
+    }
+
+    /* 網格排版 */
+    .row {
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    
+    .box {
+        width: 50%; 
+        box-sizing: border-box; 
+        padding: 50px;
+    }
+
+    /* 左側 Box 樣式 (淺色系) */
+    .box-left {
+        background-color: #e0fbfc; /* 極淺冰藍色 */
+        color: #1c2541;
+    }
+    .box-left h2 {
+        color: #1c2541; 
+        border-bottom: 1px solid #1c2541;
+        padding-bottom: 10px;
+    }
+
+    /* 右側 Box 樣式 (深色系) */
+    .box-right {
+        background-color: #3a506b; /* 中深灰藍色 */
+        color: #ffffff;
+    }
+    .box-right h2 {
+        color: #5bc0be; 
+        border-bottom: 1px solid #5bc0be;
+        padding-bottom: 10px;
+    }
+    .box-right h3 {
+        color: #5bc0be;
+        font-size: 1.1em;
+        margin-bottom: 5px;
+    }
+
+    /* Footer 樣式 */
+    .footer {
+        text-align: center;
+        padding: 40px 20px;
+        color: white;
+        background-color: #1c2541; 
+    }
+    
+    /* 連結狀態樣式 */
+    a:link { color: #5bc0be; text-decoration: underline; }
+    a:visited { color: #3a7ca5; }
+    a:hover { color: #ffffff; text-decoration: none; }
+    a:active { color: #ff6666; }
+
+    .footer a:link, .footer a:visited { color: #ffffff; }
+    .footer a:hover { color: #5bc0be; }
+
+    /* 更新/刪除 文字樣式 */
+    del { color: #888; }
+    ins { color: #00b36b; text-decoration: none; font-weight: bold; }
+
+</style>
+</head>
+<body>
+
+    <!-- 標題區塊 -->
+    <div class="Rad">
+        <h1>CIAO BAND</h1>
+        <p>雀兒輕音社 期中公演 | Midterm Concert</p>
+        <p><strong class="accent-blue">November 12, 2026</strong><br>6:30 PM - 9:30 PM • Taipei</p>
+    </div>
+
+    <!-- 主視覺圖片 -->
+    <div class="image-container">
+        <!-- 可將 src 替換為樂團表演的照片 -->
+        <a href="https://www.instagram.com/ntut_ciao" target="_blank">
+            <img src="./band-live-photo.jpg" alt="Ciao Band Live Performance" style="max-width: 100%; height: auto; width: 600px; border: 2px solid #333;">
+        </a>
+        <p style="color: #aaaaaa; font-size: 0.9em; margin-top: 15px;">Click the image to visit our official page.</p>
+    </div>
+
+    <!-- 2x2 網格：第一排 -->
+    <div class="row">
+        <div class="box box-left">
+            <h2>About the Concert</h2>
+            <p>Welcome to the <strong>Ciao Band Midterm Concert</strong> (雀兒輕音社期中公演).</p>
+            <p>Join us for an unforgettable night of live music! Our talented members have been practicing hard to bring you a mix of pop, rock, and acoustic melodies.</p>
+            <p><q>Good Vibes. Great Music. See you there!</q></p>
+        </div>
+        
+        <div class="box box-right">
+            <h2>Performance Highlights</h2>
+            <h3>FULL BAND SETS</h3>
+            <p>High-energy rock and pop band performances.</p>
+            <h3>ACOUSTIC SESSIONS</h3>
+            <p>Chill and relaxing unplugged guitar & vocal covers.</p>
+            <h3>GUEST PERFORMERS</h3>
+            <p>Special collaborations with other music clubs.</p>
+            <p>Music starts at 7:00 PM.</p>
+        </div>
+    </div>
+
+    <!-- 2x2 網格：第二排 -->
+    <div class="row">
+        <div class="box box-left" style="background-color: #98c1d9;">
+            <h2>Tonight's Program</h2>
+            <p><strong>6:30 PM</strong> - Doors Open<br>
+            <strong>7:00 PM</strong> - Opening Acoustic Set<br>
+            <strong>8:00 PM</strong> - Main Band Performances<br>
+            <strong>9:15 PM</strong> - Finale & Encore</p>
+            <p><strong>Schedule Update:</strong><br>
+            <del>Doors open at 6:00 PM.</del><br>
+            <ins>Doors now open at 6:30 PM.</ins></p>
+        </div>
+        
+        <div class="box box-right" style="background-color: #293241;">
+            <h2>Admission & Support</h2>
+            <p>Standard Entry: <del>NT$150</del><br>
+            <strong style="color: #5bc0be;">NTUT Students: FREE Entry</strong></p>
+            <p>Your support includes:<br>Full access to the concert + Limited edition club sticker!</p>
+            <p><em>Seats are first-come, first-served.</em></p>
+            <p><a href="https://www.instagram.com/ntut_ciao" target="_blank">Follow us for updates</a></p>
+        </div>
+    </div>
+
+    <!-- 頁尾聯絡資訊 -->
+    <div class="footer">
+        <h2>Contact Us</h2>
+        <address style="font-style: normal;">
+            <strong>雀兒輕音社 Ciao Band</strong><br>
+            National Taipei University of Technology (NTUT)<br><br>
+            <a href="mailto:ciaoband@mail.ntut.edu.tw">ciaoband@mail.ntut.edu.tw</a> | <a href="tel:+886905675719">+886-905-675-719</a>
+        </address>
+    </div>
+
+</body>
+</html>
